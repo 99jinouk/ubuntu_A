@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "a,h"
+#include "a.h"
 void func1();
 void func2();
 void main() {
