@@ -1,0 +1,12 @@
+#!/bin/bash
+row=$1
+if [ $# -eq 0  ]; then
+  echo "this pro re one para."
+elif [ $1 -lt 1 -o $1 -gt 9 ]; then
+  echo "this pro"
+else
+  while [[ 10 -gt $row ]]; do
+    echo $row
+    row='echo $row+1 | bc'
+  done
+fi
