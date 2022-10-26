@@ -1,9 +1,9 @@
 #!/bin/bash
 row=$1
-if [ $# -eq 0  ]; then
-  echo "this pro re one para."
+if [ $# -eq 0 ]; then
+  echo "this program require one parameter."
 elif [ $1 -lt 1 -o $1 -gt 9 ]; then
-  echo "this pro"
+  echo "this program require number 1 between 9"
 else
   while [[ 10 -gt $row ]]; do
     echo $row
