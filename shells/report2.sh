@@ -1,21 +1,20 @@
 #!/bin/bash
 
-set -- $(getopt -q ab:cd "$@")
-while [ -n $1 ]; do
-	case $1 in
-		-a) echo "Found the -a option1" ;;
-		-b) param=$2
-		    echo "Found the -b option2 with parameter value $param"
-				shift ;;
-	  -c) echo "Found the -c option3";;
-		--) shift
-		    break ;;
-	   *) echo "$1 is not an option4" ;;
-	 esac
-	 shift
- done
- count=1
- for param in $@ ; do
-	 echo "parameter #$count : $param"
-	 count=$[ $count + 1 ]
- done
+if [ $# -eq 3 ];then
+while [ -n $2 ];do
+  case $2 in
+    +) echo "41836041 $1 + $3 = `expr $1 + $3`"
+    break;;
+    -) echo "41836041 $1 - $3 = `expr $1 - $3`"
+    break;;
+    X) echo "41836041 $1 X $3 = `expr $1 \* $3`"
+    break;;
+    /) echo "41836041 $1 / $3 = `expr $1 / $3`"
+    break;;
+    *) echo "second prameter is only '+ = X /'"
+    break;;
+  esac
+done
+else
+  echo "this program require theree paramters..."
+fi
