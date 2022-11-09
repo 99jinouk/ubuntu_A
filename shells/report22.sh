@@ -1,5 +1,4 @@
 #!/bin/bash
-
 if [ $# -ne 3 ]; then
   echo "this program require theree paramters..."
 elif [ $# -eq 3 ]; then
