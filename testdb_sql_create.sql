@@ -13,7 +13,7 @@ explain st_info;
 explain st_grade;
 
 insert into st_info values(202201, 'LeeGilDong', 'Game');
-insert into st_info values(202201, 'KimGilDong', 'Computer');
+insert into st_info values(202201, 'LeeGilDong', 'Computer');
 insert into st_info values(202201, 'HongGilDong', 'Game');
 select * from st_info;
 

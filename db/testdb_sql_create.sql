@@ -12,6 +12,9 @@ show tables;
 explain st_info;
 explain st_grade;
 
+alter table st_info add constraint pk_stinfo primary key(ST_ID);
+alter table st_grade add constraint pk_stgrade primary key(ST_ID);
+
 insert into st_info values(202201, 'LeeGilDong', 'Game');
 insert into st_info values(202202, 'KimGilDong', 'Computer');
 insert into st_info values(202203, 'HongGilDong', 'Game');
